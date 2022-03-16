@@ -30,4 +30,4 @@ All In One Bug Bounty Tools is a simple script to automate installation of mostl
  - ./install.sh
 
  ## Inspired By
-*[Ben Sadeghipour](https://github.com/nahamsec)*
+*[Ben Sadeghipour]aka nahamsec (https://github.com/nahamsec)*
