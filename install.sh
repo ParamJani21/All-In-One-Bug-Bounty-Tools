@@ -9,16 +9,22 @@ deb https://kali.download/kali kali-rolling main contrib non-free
 sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get dist-upgrade
-sudo apt autoremove
 
+
+sudo apt-get install -y libcurl4-openssl-dev
+sudo apt-get install -y libssl-dev
 sudo apt-get install -y jq
 sudo apt-get install -y ruby-full
+sudo apt-get install -y libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-dev ruby-dev build-essential libgmp-dev zlib1g-dev
+sudo apt-get install -y build-essential libssl-dev libffi-dev python-dev-is-python3
+sudo apt-get install -y build-essential libssl-dev libffi-dev python2-dev
 sudo apt-get install -y python-setuptools
+sudo apt-get install -y libldns-dev
 sudo apt-get install -y python3-pip
 sudo apt-get install -y python-pip
 sudo apt-get install -y git
 sudo apt-get install -y rename
-
+sudo apt autoremove
 
 
 if ! [ -x "$(command -v go)" ]; then
@@ -57,6 +63,7 @@ done
 fi
 
 
+# Nuclei Installation
 echo "Installing Nuclei"
 wget https://github.com/projectdiscovery/nuclei/releases/download/v2.6.3/nuclei_2.6.3_linux_amd64.zip
 unzip -q nuclei_2.6.3_linux_amd64.zip
