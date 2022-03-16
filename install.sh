@@ -33,13 +33,13 @@ select choice in "${choices[@]}"; do
 					wget https://golang.org/dl/go1.18.linux-amd64.tar.gz
 					sudo rm -rf /usr/local/go 
 					sudo tar -C /usr/local -xzf go1.18.linux-amd64.tar.gz
-                    sudo cp /usr/local/go/bin/go /usr/bin
-                    echo 'export GOROOT=/usr/local/go' >> .bashrc
-                    echo 'export GOPATH=$HOME/go' >> .bashrc
-                    echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH' >> .bashrc 
+                                        sudo cp /usr/local/go/bin/go /usr/bin
+                                        echo 'export GOROOT=/usr/local/go' >> .bashrc
+                                        echo 'export GOPATH=$HOME/go' >> .bashrc
+                                        echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH' >> .bashrc 
 					source .bashrc
-                    go version
-                    echo Done
+                                        go version
+                                        echo Done
 					sleep 1
 					break
 					;;
