@@ -55,3 +55,11 @@ select choice in "${choices[@]}"; do
 	esac	
 done
 fi
+
+
+wget https://github.com/projectdiscovery/nuclei/releases/download/v2.6.3/nuclei_2.6.3_linux_amd64.zip
+unzip -q nuclei_2.6.3_linux_amd64.zip
+sudo mv nuclei /usr/bin
+nuclei -update
+clear
+nuclei -ut
