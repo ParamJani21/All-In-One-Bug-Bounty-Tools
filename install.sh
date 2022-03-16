@@ -26,7 +26,7 @@ sudo apt-get install -y git
 sudo apt-get install -y rename
 sudo apt autoremove
 
-
+# GO Installation
 if ! [ -x "$(command -v go)" ]; then
 echo "It looks like go is not installed, would you like to install it now"
 PS3="Please select an option : "
