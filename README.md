@@ -14,7 +14,7 @@ All In One Bug Bounty Tools is a script to install the most popular tools used t
 - httpx
 - Naabu
 - Subfinder
-
+- Simplehttpserver
 
 # Installing...
 

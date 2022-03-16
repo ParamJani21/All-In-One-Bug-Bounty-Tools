@@ -159,6 +159,15 @@ cd $HOME/Tools
 echo "DONE"
 
 
+# Simplehttpserver Installation
+echo "Installing Simplehttpserver"
+wget https://github.com/projectdiscovery/simplehttpserver/releases/download/v0.0.4/simplehttpserver_0.0.4_linux_amd64.tar.gz
+tar -xzf simplehttpserver_0.0.4_linux_amd64.tar.gz
+sudo mv simplehttpserver /usr/bin
+cd $HOME/Tools
+echo "DONE"
+
+
 echo -e "\n\n\n\n\n\n\n\n\n\n\nDone! All Tools are made up in ~/Tools"
 cd $HOME/Tools
 ls -la
