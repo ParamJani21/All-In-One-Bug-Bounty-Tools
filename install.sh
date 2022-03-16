@@ -1,4 +1,11 @@
 #!/bin/bash
+
+sudo rm /etc/apt/sources.list && sudo touch /etc/apt/sources.list && sudo chmod 644 /etc/apt/sources.list && sudo printf "# See https://www.kali.org/docs/general-use/kali-linux-sources-list-repositories/
+deb https://kali.download/kali kali-rolling main contrib non-free
+
+# Additional line for source packages
+# deb-src https://kali.download/kali kali-rolling main contrib non-free" | sudo tee -a /etc/apt/sources.list
+
 sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get dist-upgrade
