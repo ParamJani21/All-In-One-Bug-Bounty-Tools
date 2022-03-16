@@ -24,7 +24,13 @@ sudo apt-get install -y python3-pip
 sudo apt-get install -y python-pip
 sudo apt-get install -y git
 sudo apt-get install -y rename
+sudo apt-get install pip
+sudo pip install dnspython
+sudo pip install requests
+sudo pip install argparse
 sudo apt autoremove
+clear
+
 
 # GO Installation
 if ! [ -x "$(command -v go)" ]; then
@@ -62,19 +68,31 @@ done
 fi
 
 
+# WPScan Installation
+echo "Installing WPScan"
+sudo apt-get install wpscan
+sudo gem update wpscan
+sudo wpscan --update
+echo "DONE"
+
+
+# httprobe Installation
+sudo apt-get install httprobe
+echo "DONE"
+
+
+#create a Tools folder in ~/
+mkdir ~/Tools
+cd $HOME/Tools
+
+
 # Nuclei Installation
 echo "Installing Nuclei"
 wget https://github.com/projectdiscovery/nuclei/releases/download/v2.6.3/nuclei_2.6.3_linux_amd64.zip
 unzip -q nuclei_2.6.3_linux_amd64.zip
 sudo mv nuclei /usr/bin
 nuclei -update
-clear
 nuclei -ut
-
-
-#create a Tools folder in ~/
-mkdir ~/Tools
-cd $HOME/Tools
 
 
 # Sublist3r Installation
@@ -86,11 +104,59 @@ cd $HOME/Tools
 echo "DONE"
 
 
-# WPScan Installation
-echo "Installing WPScan"
-sudo apt-get install wpscan
-sudo gem update wpscan
-sudo wpscan --update
+# Aquatone Installation
+echo "Installing Aquatone"
+wget https://github.com/michenriksen/aquatone/releases/download/v1.7.0/aquatone_linux_amd64_1.7.0.zip
+unzip -q aquatone_linux_amd64_1.7.0.zip 
+sudo mv aquatone /usr/bin
+cd $HOME/Tools
+echo "DONE"
+
+
+# Dalfox Installation
+echo "Installing Dalfox"
+wget https://github.com/hahwul/dalfox/releases/download/v2.7.1/dalfox_2.7.1_linux_amd64.tar.gz
+tar -xzf dalfox_2.7.1_linux_amd64.tar.gz
+sudo mv dalfox /usr/bin
+cd $HOME/Tools
+echo "DONE"
+
+
+# Paramspider Installation
+echo "Installing Paramspider - Use Python 3.7+"
+git clone https://github.com/devanshbatham/ParamSpider
+cd ParamSpider
+pip3 install -r requirements.txt
+#python3 paramspider.py --domain hackerone.com
+cd $HOME/Tools
+echo "DONE"
+
+
+# httpx Installation
+echo "Installing httpx"
+wget https://github.com/projectdiscovery/httpx/releases/download/v1.2.0/httpx_1.2.0_linux_amd64.zip
+unzip -q httpx_1.2.0_linux_amd64.zip
+sudo mv httpx /usr/bin
+cd $HOME/Tools
+echo "DONE"
+
+
+# Naabu Installation
+echo "Installing Naabu"
+wget https://github.com/projectdiscovery/naabu/releases/download/v2.0.5/naabu_2.0.5_linux_amd64.zip
+unzip -q naabu_2.0.5_linux_amd64.zip
+sudo mv naabu /usr/bin
+cd $HOME/Tools
+echo "DONE"
+
+
+# Subfinder Installation
+echo "Installing Subfinder"
+wget https://github.com/projectdiscovery/subfinder/releases/download/v2.5.0/subfinder_2.5.0_linux_amd64.zip
+unzip -q subfinder_2.5.0_linux_amd64.zip
+sudo mv subfinder /usr/bin
+cd $HOME/Tools
+echo "DONE"
 
 
 echo -e "\n\n\n\n\n\n\n\n\n\n\nDone! All Tools are made up in ~/Tools"
