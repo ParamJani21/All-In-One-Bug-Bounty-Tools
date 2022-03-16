@@ -77,7 +77,14 @@ echo "DONE"
 
 
 # httprobe Installation
+echo "Installing httprobe"
 sudo apt-get install httprobe
+echo "DONE"
+
+
+# Amass Installation
+echo "Installing Amass"
+sudo apt-get install amass
 echo "DONE"
 
 
@@ -164,6 +171,20 @@ echo "Installing Simplehttpserver"
 wget https://github.com/projectdiscovery/simplehttpserver/releases/download/v0.0.4/simplehttpserver_0.0.4_linux_amd64.tar.gz
 tar -xzf simplehttpserver_0.0.4_linux_amd64.tar.gz
 sudo mv simplehttpserver /usr/bin
+cd $HOME/Tools
+echo "DONE"
+
+
+# Dirsearch Installation
+echo "Installing dirsearch - Python 3.7+"
+git clone https://github.com/maurosoria/dirsearch.git
+cd dirsearch
+pip3 install -r requirements.txt
+#python3 dirsearch.py -u <URL> -e <EXTENSIONS>
+
+echo "Downloading Seclists"
+cd $HOME/Tools
+git clone https://github.com/danielmiessler/SecLists.git
 cd $HOME/Tools
 echo "DONE"
 
