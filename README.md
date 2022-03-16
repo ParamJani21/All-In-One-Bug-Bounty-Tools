@@ -1,6 +1,6 @@
 # All In One Bug Bounty Tools
 
-All In One Bug Bounty Tools is a script to install the most popular tools used to automate tasks while looking for vulnerabilities for a bug bounty program.
+All In One Bug Bounty Tools is a simple script to automate installation of mostly used tools used in bug bounty programs, to automate tasks while looking for vulnerabilities.
 
 # Tools
 
@@ -28,3 +28,6 @@ All In One Bug Bounty Tools is a script to install the most popular tools used t
  - chmod +x install.sh 
 
  - ./install.sh
+
+ ## Inspired By
+*[Ben Sadeghipour](https://github.com/nahamsec)*
