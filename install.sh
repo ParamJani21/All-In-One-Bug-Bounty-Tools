@@ -72,3 +72,29 @@ clear
 nuclei -ut
 
 
+#create a Tools folder in ~/
+mkdir ~/Tools
+cd $HOME/Tools
+
+
+# Sublist3r Installation
+echo "Installing Sublist3r"
+git clone https://github.com/aboul3la/Sublist3r.git
+cd Sublist3r*
+pip install -r requirements.txt
+cd $HOME/Tools
+echo "DONE"
+
+
+# WPScan Installation
+echo "Installing WPScan"
+sudo apt-get install wpscan
+sudo gem update wpscan
+sudo wpscan --update
+
+
+echo -e "\n\n\n\n\n\n\n\n\n\n\nDone! All Tools are made up in ~/Tools"
+cd $HOME/Tools
+ls -la
+
+
