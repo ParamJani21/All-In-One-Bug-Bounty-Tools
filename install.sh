@@ -34,7 +34,6 @@ choices=("YES" "NO" "QUIT")
 select choice in "${choices[@]}"; do
         case $choice in
                 YES)
-
 					echo "Installing Golang"
 					wget https://golang.org/dl/go1.18.linux-amd64.tar.gz
 					sudo rm -rf /usr/local/go 
