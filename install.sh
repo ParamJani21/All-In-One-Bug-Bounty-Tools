@@ -252,8 +252,8 @@ cd $HOME/Tools
 echo "DONE"
 
 
-# PayloadAllThings - Payload Collection
-echo "Downloading PayloadAllThings"
+# PayloadAllTheThings - Payload Collection
+echo "Downloading PayloadAllTheThings"
 cd $HOME/Tools
 git clone https://github.com/swisskyrepo/PayloadsAllTheThings.git
 cd $HOME/Tools
