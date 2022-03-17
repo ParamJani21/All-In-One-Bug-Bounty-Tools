@@ -233,6 +233,17 @@ cd $HOME/Tools/
 echo "DONE"
 
 
+# Masscan Installation
+echo "Installing Masscan"
+sudo apt-get --assume-yes install git make gcc
+cd $HOME\Tools
+git clone https://github.com/robertdavidgraham/masscan
+cd $HOME/Tools/masscan
+make
+cd $HOME/Tools/
+echo "DONE"
+
+
 # Seclists Collection
 echo "Downloading Seclists"
 cd $HOME/Tools
