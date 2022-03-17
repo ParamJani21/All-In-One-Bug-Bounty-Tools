@@ -88,6 +88,12 @@ sudo apt-get install amass
 echo "DONE"
 
 
+# Amass Installation
+echo "Installing Assetfinder"
+sudo apt-get install assetfinder
+echo "DONE"
+
+
 #create a Tools folder in ~/
 mkdir ~/Tools
 cd $HOME/Tools
@@ -181,6 +187,17 @@ git clone https://github.com/maurosoria/dirsearch.git
 cd dirsearch
 pip3 install -r requirements.txt
 #python3 dirsearch.py -u <URL> -e <EXTENSIONS>
+cd $HOME/Tools
+echo "DONE"
+
+
+# Findomain Installation
+echo "Installing findomain"
+wget https://github.com/Findomain/Findomain/releases/download/7.0.1/findomain-linux
+sudo mv findomain-linux /usr/bin
+cd $HOME/Tools
+echo "DONE"
+
 
 echo "Downloading Seclists"
 cd $HOME/Tools
