@@ -223,6 +223,17 @@ git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
 cd $HOME/Tools/
 echo "DONE"
 
+
+# Massdns Installation
+echo "Installing Massdns"
+git clone https://github.com/blechschmidt/massdns.git
+cd $HOME/Tools/massdns
+make
+cd $HOME/Tools/
+echo "DONE"
+
+
+# Seclists Collection
 echo "Downloading Seclists"
 cd $HOME/Tools
 git clone https://github.com/danielmiessler/SecLists.git
@@ -230,6 +241,7 @@ cd $HOME/Tools
 echo "DONE"
 
 
+# PayloadAllThings - Payload Collection
 echo "Downloading PayloadAllThings"
 cd $HOME/Tools
 https://github.com/swisskyrepo/PayloadsAllTheThings.git
