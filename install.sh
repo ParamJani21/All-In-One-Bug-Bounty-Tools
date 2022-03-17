@@ -206,10 +206,26 @@ go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 cd $HOME/Tools
 echo "DONE"
 
+# GitDorker Installation
+echo "Installing GitDorker"
+cd $HOME/Tools
+git clone https://github.com/obheda12/GitDorker.git
+cd GitDorker/
+pip3 install -r requirements.txt
+cd $HOME/Tools
+echo "DONE"
+
 
 echo "Downloading Seclists"
 cd $HOME/Tools
 git clone https://github.com/danielmiessler/SecLists.git
+cd $HOME/Tools
+echo "DONE"
+
+
+echo "Downloading PayloadAllThings"
+cd $HOME/Tools
+https://github.com/swisskyrepo/PayloadsAllTheThings.git
 cd $HOME/Tools
 echo "DONE"
 
