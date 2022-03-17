@@ -199,6 +199,14 @@ cd $HOME/Tools
 echo "DONE"
 
 
+# Subfinder Installation
+echo "Installing Subfinder"
+cd $HOME/Tools
+go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+cd $HOME/Tools
+echo "DONE"
+
+
 echo "Downloading Seclists"
 cd $HOME/Tools
 git clone https://github.com/danielmiessler/SecLists.git
