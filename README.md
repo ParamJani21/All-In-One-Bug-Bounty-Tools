@@ -21,6 +21,8 @@ All In One Bug Bounty Tools is a simple script to automate installation of mostl
 - Assetfinder
 - Subfinder
 - Seclists Collection
+- Git Dorker
+- PayloadAllThings - Payloads Collection
 
 # Installing...
 
