@@ -216,6 +216,13 @@ cd $HOME/Tools
 echo "DONE"
 
 
+# SQLMap Installation
+echo "Installing SQLMap"
+cd $HOME/Tools
+git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
+cd $HOME/Tools/
+echo "DONE"
+
 echo "Downloading Seclists"
 cd $HOME/Tools
 git clone https://github.com/danielmiessler/SecLists.git
