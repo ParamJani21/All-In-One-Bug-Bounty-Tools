@@ -244,6 +244,15 @@ cd $HOME/Tools/
 echo "DONE"
 
 
+# kxss Installation
+echo "Installing kxss"
+go install github.com/Emoe/kxss@latest
+cd #
+sudo mv ~/go/bin/kxss /usr/bin
+cd $HOME/Tools/
+echo "DONE"
+
+
 # Seclists Collection
 echo "Downloading Seclists"
 cd $HOME/Tools
