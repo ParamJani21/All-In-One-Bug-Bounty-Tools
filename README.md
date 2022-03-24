@@ -24,6 +24,7 @@ All In One Bug Bounty Tools is a simple script to automate installation of mostl
 - SQLMap
 - Massdns
 - Masscan
+- kxss
 - Seclists Collection
 - PayloadAllTheThings - Payloads Collection
 
