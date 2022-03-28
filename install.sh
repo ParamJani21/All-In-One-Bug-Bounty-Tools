@@ -253,6 +253,15 @@ cd $HOME/Tools/
 echo "DONE"
 
 
+# waybackurls Installation
+echo "Installing waybackurls"
+go install -v github.com/tomnomnom/waybackurls@latest
+cd #
+sudo mv ~/go/bin/waybackurls /usr/bin
+cd $HOME/Tools/
+echo "DONE"
+
+
 # Seclists Collection
 echo "Downloading Seclists"
 cd $HOME/Tools
