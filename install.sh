@@ -264,6 +264,14 @@ cd $HOME/Tools/
 echo "DONE"
 
 
+# uro Installation
+echo "Installing uro"
+cd #
+pip3 install uro
+cd $HOME/Tools/
+echo "DONE"
+
+
 # Seclists Collection
 echo "Downloading Seclists"
 cd $HOME/Tools
