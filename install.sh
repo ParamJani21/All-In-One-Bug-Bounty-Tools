@@ -193,8 +193,10 @@ echo "DONE"
 
 # Findomain Installation
 echo "Installing findomain"
-wget https://github.com/Findomain/Findomain/releases/download/7.0.1/findomain-linux
-sudo mv findomain-linux /usr/bin
+wget https://github.com/findomain/findomain/releases/latest/download/findomain-linux
+sudo mv findomain-linux findomain
+chmod +x findomain
+sudo mv findomain /usr/bin
 cd $HOME/Tools
 echo "DONE"
 
