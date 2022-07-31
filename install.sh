@@ -272,6 +272,52 @@ cd $HOME/Tools/
 echo "DONE"
 
 
+# gau installation
+echo "Installing gau"
+go install github.com/lc/gau/v2/cmd/gau@latest
+cd #
+sudo mv ~/go/bin/gau /usr/bin
+cd $HOME/Tools/
+echo "DONE"
+
+
+# gf installation
+echo "Installing gf"
+go install -v github.com/tomnomnom/gf@latest
+cd #
+sudo mv ~/go/bin/gf /usr/bin
+cd $HOME/Tools/
+echo "DONE"
+
+
+# unfurl installation
+echo "Installing unfurl"
+go install -v github.com/tomnomnom/unfurl@latest
+cd #
+sudo mv ~/go/bin/unfurl /usr/bin
+cd $HOME/Tools/
+echo "DONE"
+
+
+#gauplus installation
+echo "Installing gauplus"
+go install github.com/bp0lr/gauplus@latest
+cd #
+sudo mv ~/go/bin/gauplus /usr/bin
+cd $HOME/Tools/
+echo "DONE"
+
+
+#wafw00f installation
+echo "Installing wafw00f"
+git clone https://github.com/EnableSecurity/wafw00f.git
+cd wafw00f
+python setup.py install
+echo "wafw00f installed"
+cd $HOME/Tools/
+echo "DONE"
+
+
 # Seclists Collection
 echo "Downloading Seclists"
 cd $HOME/Tools

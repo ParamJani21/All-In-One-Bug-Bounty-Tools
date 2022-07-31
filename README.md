@@ -27,6 +27,10 @@ All In One Bug Bounty Tools is a simple script to automate installation of mostl
 - kxss
 - uro
 - waybackurls
+- gau
+- gf
+- unfurl
+- gauplus
 - Seclists Collection
 - PayloadAllTheThings - Payloads Collection
 
