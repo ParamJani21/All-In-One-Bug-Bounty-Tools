@@ -318,6 +318,15 @@ cd $HOME/Tools/
 echo "DONE"
 
 
+#scan4all installation
+echo "Installing scan4all"
+wget https://github.com/hktalent/scan4all/releases/download/2.6.8/scan4all_2.6.8_linux_amd64.zip
+unzip -q scan4all_2.6.8_linux_amd64.zip
+sudo mv scan4all /usr/bin
+cd $HOME/Tools
+echo "DONE"
+
+
 # Seclists Collection
 echo "Downloading Seclists"
 cd $HOME/Tools
